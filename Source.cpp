@@ -91,7 +91,7 @@ node* build_tree(std::map<char, int> frequency)
 	return  freq_list.front();
 }
 
-void coding(std::map<char, std::vector<bool> >table, std::map<char, int> table_of_frequency, std::string filename, int count_of_symbol)
+void encoding(std::map<char, std::vector<bool> >table, std::map<char, int> table_of_frequency, std::string filename, int count_of_symbol)
 {
 	std::ofstream output_file;
 	std::ifstream input_file;	
@@ -186,7 +186,7 @@ int main()
 				std::cout << x[i];
 			std::cout << std::endl;
 		}*/
-		coding(table, table_of_frequency, filename, count_of_symbol);
+		encoding(table, table_of_frequency, filename, count_of_symbol);
 	}
 	else
 	{
