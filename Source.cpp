@@ -178,16 +178,14 @@ int main()
 	{
 		node *root = build_tree(table_of_frequency);
 		std::map<char, std::vector<bool> >table = table_code(root);
-
-		for (auto it = table.begin(); it != table.end(); ++it)
+		/*for (auto it = table.begin(); it != table.end(); ++it)
 		{
-			std::cout << it->first << " : ";//<< it->second << std::endl;///âûâîä íà ýêðàí
+			std::cout << it->first << " : ";//<< it->second << std::endl;///Ã¢Ã»Ã¢Ã®Ã¤ Ã­Ã  Ã½ÃªÃ°Ã Ã­
 			std::vector < bool> x = it->second;
 			for (int i = 0; i < x.size(); i++)
 				std::cout << x[i];
 			std::cout << std::endl;
-		}
-
+		}*/
 		coding(table, table_of_frequency, filename, count_of_symbol);
 	}
 	else
